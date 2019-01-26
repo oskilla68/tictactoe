@@ -7,15 +7,6 @@
 #define COMP 2
 #define PLAYER -2
 
-
-//things left to do: perfecting AI
-//draw has been completed
-
-//draw/out of space is 1
-//comp is 2
-//player is -2
-//returning 0 means none of this sht happened??
-
 void printGame(int ticarray[9]);
 
 //void editGame(char ticarray[9], int location, char type);
@@ -189,33 +180,4 @@ int winCon(int ticarray[9]){
             return ticarray[wins[i][2]];
     }
     return 0;
-	// int i;
-
-	// //running a 2D array which can be used to output numbers
-	// //with which can be run in the ticarray and with a for loop
-	// //can be used to find what is inside each node of the array
-	// int win[8][3] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, 
-	// 				 {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
-	// 				 {0, 4, 8}, {2, 4, 6}};
-
-	// //if + both = 0, draw, else win for either
-	// int winc = 0;
-	// // int winc1 = 0;
-
-	// for(i = 0; i < 8; i++){
-	// 	if(ticarray[win[i][0]] != 0 &&
-	// 	  (ticarray[win[i][0]] == ticarray[win[i][1]]) &&
-	// 	  (ticarray[win[i][0]] == ticarray[win[i][2]])){
-	// 		winc = ticarray[win[i][0]];
-	// 		if(ticarray[win[i][0]] == PLAYER) return -2;
-	// 	}
-	// }
-
-	// if(winc == COMP) return 2;
-
-	// for(int count = 0; count < 9; count++){
-	// 	if(ticarray[count] == 0) return -1;
-	// }
-
-	// return 0;
 }
